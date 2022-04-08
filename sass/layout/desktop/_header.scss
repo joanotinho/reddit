@@ -1,0 +1,42 @@
+nav {
+    padding: 0 1.5%;
+    width: 97%;
+
+    span {
+        font-size: .9rem;
+    }
+
+    .nav-logo > .column{
+        width: 30%;
+    }
+
+    .signup {
+        background-color: rgb(0,121,211);
+        padding: .8rem;
+        text-align: center;
+    }
+
+    .desktop-four-columns {
+    }
+
+    .desktop-three-columns {
+
+        .column:first-child {
+            width: 15%;
+        }
+
+        .column:nth-child(2) {
+            width: 50%;
+            border: 1px  solid red;
+        }
+    }
+
+    .desktop-two-columns {
+        justify-content: center;
+        width: max-content;
+        
+        .column {
+            width: max-content;
+        }
+    }
+}
