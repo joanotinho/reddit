@@ -1,3 +1,4 @@
+@charset "UTF-8";
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -442,6 +443,34 @@ a:focus, a:hover {
   text-decoration: none;
 }
 
+.small-button {
+  background-color: #0079D3;
+  border-radius: 0.8rem;
+  height: 1.2rem;
+  padding: 0.2rem 0.8rem;
+  text-align: center;
+  width: max-content;
+}
+.small-button span {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.big-button {
+  background-color: #0079D3;
+  border-radius: 0.8rem;
+  margin: auto;
+  padding: 0.5% 0;
+  text-align: center;
+  width: 85%;
+}
+.big-button span {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
 .desktop-six-columns {
   display: flex;
   justify-content: space-between;
@@ -472,23 +501,22 @@ a:focus, a:hover {
 }
 .desktop-three-columns .column {
   width: 30%;
+  width: max-content;
 }
 
 .desktop-two-columns {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
 }
 .desktop-two-columns .column {
   width: 45%;
-  border: 1px solid red;
 }
 .desktop-two-columns .column-aside {
   width: 30%;
 }
 .desktop-two-columns .column-main {
-  width: 70%;
+  width: 68%;
 }
 
 .desktop-single-column {
@@ -500,39 +528,458 @@ a:focus, a:hover {
 }
 
 nav {
-  padding: 0 1.5%;
+  background-color: #fff;
+  display: flex;
+  position: fixed;
+  padding: 0.5% 1.5%;
   width: 97%;
+  z-index: 1000;
 }
 nav span {
   font-size: 0.9rem;
 }
-nav .nav-logo > .column {
-  width: 30%;
+nav .nav-logo {
+  display: flex;
 }
-nav .signup {
-  background-color: rgb(0, 121, 211);
-  padding: 0.8rem;
+nav .nav-logo .logo-icon {
+  height: 2rem;
+  margin-right: 0.5rem;
+  width: 2rem;
+}
+nav .nav-logo .logo-text svg {
+  width: 3.5rem;
+  height: 2rem;
+}
+nav .nav-searcher {
+  background-color: #F6F7F8;
+  border-radius: 0.3rem;
+  display: flex;
+  margin-left: 4rem;
+  margin-right: 2rem;
+  padding: 0 1rem;
+  width: 100%;
+}
+nav .nav-searcher .searcher-icon {
+  color: #828282;
+  margin-right: 0.5rem;
+  padding-top: 0.4rem;
+}
+nav .nav-searcher .searcher-icon svg {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+nav .nav-searcher .searcher-text {
+  color: #828282;
+  padding: 0.5rem 0;
+}
+nav .nav-searcher .searcher-text span {
+  font-size: 0.8rem;
+}
+nav .nav-right .notify {
+  background-color: #EDEFF1;
+  margin: 0.2rem 0;
+  padding: 0.3rem 0.5rem;
+  border-radius: 50%;
+}
+nav .nav-right .notify svg {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+nav .nav-right .login {
+  border: 0.1em solid rgb(0, 121, 211);
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
   text-align: center;
 }
-nav .desktop-three-columns .column:first-child {
-  width: 15%;
+nav .nav-right .login span {
+  color: rgb(0, 121, 211);
+  font-weight: 600;
 }
-nav .desktop-three-columns .column:nth-child(2) {
-  width: 50%;
-  border: 1px solid red;
+nav .nav-right .signup {
+  background-color: rgb(0, 121, 211);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-radius: 1.1rem;
 }
-nav .desktop-two-columns {
-  justify-content: center;
+nav .nav-right .signup span {
+  color: white;
+  font-weight: 600;
+}
+nav .nav-right .account {
+  display: flex;
+  margin-left: 1rem;
+}
+nav .nav-right .account svg {
+  color: #666;
+  width: 1.5rem;
+  height: 2rem;
+}
+nav .nav-right .column {
+  margin-right: 1rem;
   width: max-content;
 }
-nav .desktop-two-columns .column {
-  width: max-content;
+nav .nav-right .desktop-two-columns .column {
+  margin-right: 0;
 }
 
 main {
-  margin-top: 10vh;
+  background-color: #DAE0E6;
   padding: 0 10%;
+  padding-top: 3.5rem;
   width: 80%;
+}
+
+.trending-topics .trending-topics-title {
+  font-size: 0.8rem;
+  padding: 0.7rem 0;
+}
+.trending-topics .trending-topics-title span {
+  color: #1A1A1B;
+}
+.trending-topics .trending-topic-image {
+  filter: brightness(50%);
+  width: 100%;
+}
+.trending-topics .trending-topic-image img {
+  border-radius: 0.3rem;
+  height: 10rem;
+  width: 95%;
+}
+.trending-topics .trending-topic-title {
+  color: #fff;
+  position: absolute;
+  top: 10rem;
+}
+.trending-topics .trending-topic-title h3 {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+.trending-topics .trending-topic-description {
+  color: #fff;
+  position: absolute;
+  top: 11.3rem;
+}
+.trending-topics .trending-topic-description h4 {
+  font-size: 0.8rem;
+  font-weight: 100;
+  margin-left: 0.5rem;
+  width: 60%;
+}
+.trending-topics .trending-topic-subreddit {
+  color: #fff;
+  display: flex;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 14rem;
+}
+.trending-topics .trending-topic-subreddit .subreddit-logo {
+  margin-left: 0.5rem;
+  margin-right: 0.3rem;
+  width: 5%;
+}
+.trending-topics .trending-topic-subreddit .subreddit-logo img {
+  border-radius: 50%;
+}
+
+.recommended-categories-title {
+  font-size: 0.9rem;
+  margin: 0.7rem 0;
+}
+
+.recommended-categories {
+  background-color: #fff;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 0;
+  margin: 1rem 0;
+  width: 100%;
+}
+.recommended-categories .recommended-category {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 1rem;
+}
+.recommended-categories .recommended-category.blue-color {
+  background-color: #F6F7F8;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+}
+.recommended-categories .recommended-category.blue-color .recommended-category-title {
+  color: #0079D3;
+}
+.recommended-categories .recommended-category.blue-color .recommended-category-logo svg {
+  color: #0079D3;
+}
+.recommended-categories .recommended-category .recommended-category-logo svg {
+  color: #9EA0A2;
+  height: 1.3rem;
+  width: 1.3rem;
+}
+.recommended-categories .recommended-category .recommended-category-title {
+  color: #9EA0A2;
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+.recommended-categories .recommended-category .recommended-category-title.blue-color {
+  color: #0079D3;
+}
+.recommended-categories .more {
+  margin-top: 0.3rem;
+}
+.recommended-categories .more svg {
+  color: #9EA0A2;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.recommended-categories .view-by {
+  display: flex;
+  margin-top: 0.3rem;
+}
+.recommended-categories .view-by svg {
+  color: #9EA0A2;
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+.post {
+  border-radius: 0.3rem;
+  padding: 1% 2.5%;
+  margin-bottom: 1rem;
+  width: 95%;
+  background-color: #fff;
+}
+.post .column {
+  width: max-content;
+}
+.post .post-content {
+  padding: 0 2.5%;
+  width: 95%;
+}
+.post .post-content .content-subreddit .desktop-two-columns {
+  justify-content: start;
+}
+.post .post-content .content-subreddit .desktop-two-columns .subreddit {
+  display: flex;
+  width: min-content;
+}
+.post .post-content .content-subreddit .desktop-two-columns .subreddit .subreddit-icon {
+  width: 1rem;
+}
+.post .post-content .content-subreddit .desktop-two-columns .subreddit .subreddit-icon img {
+  border-radius: 50%;
+}
+.post .post-content .content-subreddit .desktop-two-columns .subreddit .subreddit-title {
+  font-size: 0.8rem;
+}
+.post .post-content .content-subreddit .desktop-two-columns .subreddit::after {
+  content: "•";
+  color: #9C9C9C;
+  margin: 0 0.5rem;
+}
+.post .post-content .content-subreddit .subreddit-author span {
+  color: #9C9C9C;
+  font-size: 0.7rem;
+}
+.post .post-content .content-subreddit .subreddit-archievements {
+  margin-left: 2rem;
+}
+.post .post-content .content-subreddit .subreddit-archievements .subreddit-archievement {
+  width: 1rem;
+}
+.post .post-content .content-title .category {
+  background-color: #5CC0FF;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.2rem;
+  width: max-content;
+}
+.post .post-content .content-interact-box {
+  display: flex;
+}
+.post .post-content .content-interact-box .interact-item {
+  display: flex;
+  margin-right: 1rem;
+}
+.post .post-content .content-interact-box .interact-item .interact-item-icon svg {
+  color: #9C9C9C;
+  height: 1.7rem;
+  width: 1.7rem;
+}
+.post .post-content .content-interact-box .interact-item .interact-item-title {
+  color: #9C9C9C;
+  font-size: 0.7rem;
+  padding: 0.4rem 0;
+}
+.post .post-vote .up-vote {
+  text-align: center;
+  color: #9C9C9C;
+}
+.post .post-vote .up-vote svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.post .post-vote .down-vote {
+  text-align: center;
+  color: #9C9C9C;
+}
+.post .post-vote .down-vote svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.post .post-vote .votes p {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.column-aside {
+  margin-top: 4.3%;
+}
+.column-aside .trending-subreddits {
+  background-color: #fff;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+}
+.column-aside .trending-subreddits .trending-subreddits-header-title {
+  background-color: #000;
+  border-radius: 0.3rem 0.3rem 0 0;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 3rem 0 0.7rem 0;
+  margin: auto;
+  text-align: center;
+  white-space: nowrap;
+}
+.column-aside .trending-subreddits .trending-subreddit {
+  margin: 0.7rem;
+  border-bottom: 2px solid #E6E6E6;
+  display: flex;
+  padding: 0 5%;
+  width: 90%;
+}
+.column-aside .trending-subreddits .trending-subreddit .trending-subreddit-item {
+  display: flex;
+}
+.column-aside .trending-subreddits .trending-subreddit .trending-subreddit-item .upward-position {
+  color: #46D160;
+}
+.column-aside .trending-subreddits .trending-subreddit .trending-subreddit-item .falling-position {
+  color: #F44336;
+}
+.column-aside .trending-subreddits .trending-subreddit .trending-subreddit-item .trending-subreddit-position {
+  padding: 0.5rem 0;
+  width: max-content;
+}
+.column-aside .trending-subreddits .trending-subreddit .trending-subreddit-item .trending-subreddit-icon {
+  width: 17%;
+  margin-right: 1rem;
+}
+.column-aside .trending-subreddits .trending-subreddit .trending-subreddit-item .trending-subreddit-icon img {
+  border-radius: 50%;
+}
+.column-aside .trending-subreddits .trending-subreddit .trending-subreddit-item .trending-subreddit-name {
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+}
+.column-aside .trending-subreddits .view-all.big-button {
+  margin-top: 0.7rem;
+}
+.column-aside .trending-subreddits .view-more {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
+}
+.column-aside .trending-subreddits .view-more .view-more-category {
+  background-color: #F6F7F8;
+  border-radius: 0.7rem;
+  color: #0079D3;
+  font-size: 0.8rem;
+  margin: 0.3rem 0.5rem;
+  padding: 0.2rem 0.5rem;
+  width: max-content;
+}
+.column-aside .reddit-premium {
+  background-color: #fff;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  padding: 1rem;
+}
+.column-aside .reddit-premium .reddit-premium-logo {
+  margin-right: 0.5rem;
+  color: #FF4500;
+}
+.column-aside .reddit-premium .reddit-premium-text {
+  width: 70%;
+}
+.column-aside .reddit-premium .reddit-premium-text .reddit-premium-title {
+  font-size: 0.8rem;
+}
+.column-aside .reddit-premium .reddit-premium-text .reddit-premium-description {
+  font-size: 0.7rem;
+}
+.column-aside .reddit-premium .reddit-premium-button.big-button {
+  margin: 0.5rem auto;
+  background-color: #FF4500;
+}
+.column-aside .popular-communities {
+  background-color: #fff;
+  border-radius: 0.3rem;
+  margin-top: 0.5rem;
+}
+.column-aside .popular-communities .popular-community {
+  border-bottom: 0.1rem solid #E6E6E6;
+  display: flex;
+  justify-content: space-between;
+}
+.column-aside .popular-communities .popular-community .popular-community-name {
+  font-size: 0.5rem;
+  padding: 1rem;
+}
+.column-aside .popular-communities .popular-community .popular-community-dropdownable {
+  color: #A2A2A3;
+  padding: 0.5rem 0.5rem 0 0;
+}
+.column-aside .popular-communities .popular-community .popular-community-dropdownable svg {
+  width: 1.7rem;
+  height: 1.6rem;
+}
+.column-aside .footer {
+  background-color: #fff;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+}
+.column-aside .footer .footer-item {
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+.column-aside .footer .footer-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.column-aside .footer .footer-item .footer-item-name {
+  font-size: 0.7rem;
+}
+.column-aside .footer .footer-item .footer-item-dropdownable {
+  color: #A2A2A3;
+  padding: 0.5rem 0.5rem 0 0;
+}
+.column-aside .footer .footer-item .footer-item-dropdownable svg {
+  width: 1.7rem;
+  height: 1.6rem;
+}
+.column-aside .footer .footer-rights {
+  white-space: nowrap;
+  font-size: 0.7rem;
 }
 
 /*# sourceMappingURL=app.css.map */

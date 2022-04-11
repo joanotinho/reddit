@@ -1,0 +1,207 @@
+
+.recommended-categories-title {
+    font-size: .9rem;
+    margin: .7rem 0;
+}
+.recommended-categories {
+
+    background-color: #fff;
+    border-radius: .3rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0;
+    margin: 1rem 0;
+    width: 100%;
+
+    .recommended-category {
+        
+        display: flex;
+        justify-content: space-between;
+        padding: 1% 1rem;
+        &.blue-color{
+            
+            background-color: #F6F7F8;
+            border-radius: 1.5rem;
+            padding: .5rem 1rem;
+            margin: 0 auto;
+
+            .recommended-category-title {
+                color: #0079D3;
+            }
+
+            .recommended-category-logo {
+                svg {
+                    color: #0079D3;
+                }
+            }
+        }
+
+        .recommended-category-logo {
+
+            svg {
+                color: #9EA0A2;
+                height: 1.3rem;
+                width: 1.3rem;
+            }
+
+        }
+
+        .recommended-category-title {
+            color: #9EA0A2;
+            font-size: .7rem;
+            white-space: nowrap;
+        }
+
+        .recommended-category-title.blue-color {
+            color: #0079D3;
+        }
+    }
+    
+    .more {
+        margin-top: .3rem;
+        svg {
+            color: #9EA0A2;
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+    }
+
+    .view-by {
+
+        display: flex;
+        margin-top: .3rem;
+
+        svg {
+            color: #9EA0A2;
+            height: 1.7rem;
+            width: 1.7rem;
+        }
+    }
+}
+
+.post {
+    border-radius: .3rem;
+    padding: 1% 2.5%;
+    margin-bottom: 1rem;
+    width: 95%;
+
+    background-color: #fff;
+
+    .column {
+        width: max-content;
+    }
+
+    .post-content {
+        padding: 0 2.5%;
+        width: 95%;
+
+        .content-subreddit {
+        
+            .desktop-two-columns {
+                justify-content: start;
+                
+                .subreddit {
+                    display: flex;
+                    width: min-content;
+    
+                    .subreddit-icon {
+                        width: 1rem;
+
+                        img {
+                            border-radius: 50%;
+                        }
+                    }
+    
+                    .subreddit-title {
+                        font-size: .8rem;
+                    }
+    
+                    &::after {
+                        content: "•";
+                        color: #9C9C9C;
+                        margin: 0 .5rem;
+                    }
+                }
+            }
+    
+            .subreddit-author {
+                span {
+                    color: #9C9C9C;
+                    font-size: .7rem;
+                }
+            }
+    
+            .subreddit-archievements {
+                margin-left: 2rem;
+                .subreddit-archievement {
+                    width: 1rem;
+                }
+            }
+        }
+        
+        .content-title {
+            .category {
+                background-color: #5CC0FF;
+                border-radius: .2rem;
+                color: #fff;
+                font-size: .7rem;
+                padding: .2rem .2rem;
+                width: max-content;
+            }
+        }
+    
+        .content-interact-box {
+            display: flex;
+
+            .interact-item {
+                display: flex;
+
+                margin-right: 1rem;
+
+                .interact-item-icon {
+                    svg {
+                        color: #9C9C9C;
+                        height: 1.7rem;
+                        width: 1.7rem;
+                    }
+                }
+
+                .interact-item-title {
+                    color: #9C9C9C;
+                    font-size: .7rem;
+                    padding: .4rem 0;
+                }
+            }
+        }
+        
+    }
+    
+    .post-vote {
+
+        .up-vote {
+            text-align: center;
+            color: #9C9C9C;
+            svg {
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+        }
+
+        .down-vote {
+            text-align: center;
+            color: #9C9C9C;
+
+            svg {
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+        }
+
+        .votes {
+            p {
+                text-align: center;
+                font-size: .7rem;
+            }
+        }
+    }
+}

@@ -3,7 +3,12 @@
 @import "base/content";
 @import "base/normalize";
 @import "base/typography";
+@import "components/desktop/small-button";
+@import "components/desktop/big-button";
 @import "helpers/desktop/variables";
 @import "layout/desktop/columns";
 @import "layout/desktop/header";
 @import "layout/desktop/master";
+@import "layout/desktop/trending-topics";
+@import "layout/desktop/posts";
+@import "layout/desktop/aside";

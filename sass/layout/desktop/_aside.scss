@@ -1,0 +1,176 @@
+.column-aside {
+
+    margin-top: 4.3%;
+
+    .trending-subreddits {
+
+        background-color: #fff;
+        border-radius: .3rem;
+        margin-bottom: 1rem;
+
+        .trending-subreddits-header-title {
+            background-color: #000;
+            border-radius: .3rem .3rem 0 0;
+            color: #fff;
+            font-size: .7rem;
+            padding: 3rem 0 .7rem 0;
+            margin: auto;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .trending-subreddit {
+            margin: .7rem;
+
+            border-bottom: 2px solid #E6E6E6;
+            display: flex;
+            padding: 0 5%;
+            width: 90%;
+    
+            .trending-subreddit-item {
+                display: flex;
+    
+                .upward-position {
+                    color: #46D160;
+                }
+    
+                .falling-position {
+                    color: #F44336;
+                }
+    
+                .trending-subreddit-position {
+                    padding: .5rem 0;
+                    width: max-content;
+                }
+    
+                .trending-subreddit-icon {
+                    width: 17%;
+                    margin-right: 1rem;
+    
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+    
+                .trending-subreddit-name {
+                    font-size: .8rem;
+                    padding: .5rem 0;
+                }
+            }
+        }
+
+        .view-all.big-button {
+            margin-top: .7rem;
+        }
+        .view-more {
+            display: flex;
+            flex-wrap: wrap;
+            margin: .5rem 0;
+
+            .view-more-category {
+                background-color: #F6F7F8;
+                border-radius: .7rem;
+                color: #0079D3;
+                font-size: .8rem;
+                margin: .3rem .5rem;
+                padding: .2rem .5rem;
+                width: max-content;
+            }
+        }
+    }
+
+    .reddit-premium {
+        background-color: #fff;
+        border-radius: .3rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: .5rem;
+        padding: 1rem;
+
+        .reddit-premium-logo {
+            margin-right: .5rem;
+            color: #FF4500;
+        }
+
+        .reddit-premium-text {
+            width: 70%;
+
+            .reddit-premium-title {
+                font-size: .8rem;
+            }
+            .reddit-premium-description {
+                font-size: .7rem;
+            }
+        }
+
+        .reddit-premium-button.big-button {
+            margin: .5rem auto;
+            background-color: #FF4500;
+        }
+    }
+
+    .popular-communities {
+        background-color: #fff;
+        border-radius: .3rem;
+        margin-top: .5rem;
+        .popular-community {
+            border-bottom: .1rem solid #E6E6E6;
+            display: flex;
+            justify-content: space-between;
+
+            .popular-community-name {
+                font-size: .5rem;
+                padding: 1rem;
+            }
+            .popular-community-dropdownable {
+                color: #A2A2A3;
+                padding: .5rem .5rem 0 0;
+
+                svg {
+                    width: 1.7rem;
+                    height: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .footer {
+        background-color: #fff;
+        border-radius: .3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: .5rem;
+        padding: .7rem;
+
+        .footer-item {
+            font-size: .7rem;
+            margin-bottom: .5rem;
+            text-align: left;
+        }
+
+        .footer-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: .5rem;
+
+            .footer-item-name {
+                font-size: .7rem;
+            }
+            .footer-item-dropdownable {
+                color: #A2A2A3;
+                padding: .5rem .5rem 0 0;
+
+                svg {
+                    width: 1.7rem;
+                    height: 1.6rem;
+                }
+            }
+        }
+        
+        .footer-rights {
+            white-space: nowrap;
+            font-size: .7rem;
+        }
+    }
+}
